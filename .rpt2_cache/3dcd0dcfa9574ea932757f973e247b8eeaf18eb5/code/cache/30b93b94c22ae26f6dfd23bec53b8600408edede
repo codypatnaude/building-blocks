@@ -1,1 +1,0 @@
-{"code":"export function greeter(person) {\r\n    return \"Hello \" + person;\r\n}\r\n","map":{"mappings":""}}
