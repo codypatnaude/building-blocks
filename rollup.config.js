@@ -1,5 +1,6 @@
-import typescript from 'rollup-plugin-typescript2'
-import babel from 'rollup-plugin-babel'
+import typescript from 'rollup-plugin-typescript2';
+import babel from 'rollup-plugin-babel';
+import uglify from 'rollup-plugin-uglify';
 
 export default {
   input: 'src/main.ts',
@@ -14,6 +15,7 @@ export default {
     }),
     babel({
       exclude: 'node_modules/**',
-    })
+    }),
+    uglify()
   ]
 }
