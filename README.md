@@ -109,6 +109,6 @@ You've probably noticed that all the buttons in these examples have used 'bb-cli
 
 ## Coming soon...
 This is still very much a work in progress! In the future I plan to add:
-* support for more evens (change, keyup, etc.)
+* support for more events (change, keyup, etc.)
 * two way binding
 * possibly even some templating directives (bb-show, bb-repeat, etc.)
