@@ -1,3 +1,5 @@
+import * as stringUtils from 'ember-cli-string-utils';
+
 export class Builder{
   constructor(){}
 
@@ -13,11 +15,16 @@ export class Builder{
   }
 
   private assignEventListeners(element: Element, scope){
-    console.log(element)
+    //assign all id's to scope.$elements
+    scope.$elements = {_root: element}
+    element.querySelectorAll('[name]').forEach(elem=>{
+      let fieldId = stringUtils.camelize(elem.getAttribute('name'));
+      scope.$elements[fieldId] = elem;
+    })
+
+    //assign click events
     element.querySelectorAll('[bb-click]').forEach(elem=>{
       let functionName = elem.getAttribute('bb-click');
-      console.log(elem);
-      console.log(functionName);
       elem.addEventListener('click', scope[functionName]);
     })
   }
