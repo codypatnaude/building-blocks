@@ -106,3 +106,9 @@ Reload and you'll notice that each button will hide the apropriate span.
 
 ## bb-click
 You've probably noticed that all the buttons in these examples have used 'bb-click' instead of 'onclick'. The library COULD have been designed to replace 'onclick' but this way it is really obvious what's happening. Our number one goal with this library was to give you a way to add scoped scripts to pages in a non-convoluted fashion.
+
+## Coming soon...
+This is still very much a work in progress! In the future I plan to add:
+* support for more evens (change, keyup, etc.)
+* two way binding
+* possibly even some templating directives (bb-show, bb-repeat, etc.)
