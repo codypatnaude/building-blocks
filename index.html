@@ -4,22 +4,21 @@
   <meta charset="utf-8">
   <meta name="viewport"
         content="width=device-width,minimum-scale=1,initial-scale=1">
-  <title>building-blocks test</title>
+  <title>building-blocks test page</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
-
 
   <test-block>
     <button type="button" bb-click="this.count()">Test 1</button>
   </test-block>
   
   <test-block>
-    <button type="button" bb-click="this.count()">Test 2</button>
+    <button type="button" bb-click="this.count()">Double Click</button>
   </test-block>
 
   <hide-block>
-    <span name="hide-me">Button 1 will hide this text</span>
+    <span name="hide-me" bb-dblclick="console.log('double click')">Button 1 will hide this text</span>
     <button type="button" bb-click="this.hide()">Button 1</button>
   </hide-block>
   

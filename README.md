@@ -107,8 +107,18 @@ Now let's try this with multiple blocks of html.
 
 Reload and you'll notice that each button will hide the apropriate span.
 
-## bb-click
-You've probably noticed that all the buttons in these examples have used 'bb-click' instead of 'onclick'. The library COULD have been designed to replace 'onclick' but this way it is really obvious what's happening. Our number one goal with this library was to give you a way to add scoped scripts to pages in a non-convoluted fashion.
+## Event handlers
+You've probably noticed that all the buttons in these examples have used 'bb-click' instead of 'onclick'. The library COULD have been designed to replace 'onclick' but this way it is really obvious what's happening. Our number one goal with this library was to give you a way to add scoped scripts to pages in a non-convoluted fashion. Here's a list of the event handlers that have been implemented so far:
+
+* bb-click
+* bb-dblclick
+* bb-focus
+* bb-blur
+* bb-keydown
+* bb-keyup
+* bb-reset
+* bb-submit
+
 
 ## Coming soon...
 This is still very much a work in progress! In the future I plan to add:
