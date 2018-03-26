@@ -23,7 +23,7 @@ Next define a 'block' in your html. All elements in the block will be encapsulat
 
 ```html
 <test-block>
-  <button type="button" bb-click="count">Test 1</button>
+  <button type="button" bb-click="this.count()">Test 1</button>
 </test-block>
 ```
 
@@ -52,14 +52,17 @@ If you run this you will have a page with a button Labeled 'Test 1'. if you clic
 
 ```html
 <test-block>
-  <button type="button" bb-click="count">Test 1</button>
+  <button type="button" bb-click="this.count()">Test 1</button>
 </test-block>
 
 <test-block>
-  <button type="button" bb-click="count">Test 2</button>
+  <button type="button" bb-click="this.count()">Test 2</button>
 </test-block>
 ```
 Go ahead and reload the page. You'll notice that each button will increment it's own counter. These two blocks execute the same code, but they have their own scope.
+
+## 'this'
+You'll notice that inside the bb-click attributes I am using **this**.count(). Inside a block 'this' is used to access the block scope. Calling a function without 'this' would execute in the global scope.
 
 ## scope.$elements
 If you give names to elements inside a block they will be accessable in the scope.$elements array. This allows you to be sure that when you call an element you are only getting the element that is in your block. Here's an example:

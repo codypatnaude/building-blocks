@@ -11,21 +11,21 @@
 
 
   <test-block>
-    <button type="button" bb-click="count">Test 1</button>
+    <button type="button" bb-click="this.count()">Test 1</button>
   </test-block>
   
   <test-block>
-    <button type="button" bb-click="count">Test 2</button>
+    <button type="button" bb-click="this.count()">Test 2</button>
   </test-block>
 
   <hide-block>
     <span name="hide-me">Button 1 will hide this text</span>
-    <button type="button" bb-click="hide">Button 1</button>
+    <button type="button" bb-click="this.hide()">Button 1</button>
   </hide-block>
   
   <hide-block>
     <span name="hide-me">Button 2 will hide this text</span>
-    <button type="button" bb-click="hide">Button2</button>
+    <button type="button" bb-click="this.hide()">Button2</button>
   </hide-block>
 
   <script src="build/building-blocks.min.js"></script>
